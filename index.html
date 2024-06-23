@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles/styles.css" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+
+    <title>Bookshop</title>
+</head>
+
+<body>
+        <header class="site-header">
+            <div class="header-container">
+                <nav class="main-nav">
+                    <h2 class="nav-name">Bookshop</h2>
+                    <ul class="nav-list">
+                        <li class="nav-item "><a href="#home" class="nav-link selected-nav-item">BOOKS</a></li>
+                        <li class="nav-item"><a href="#about" class="nav-link">AUDIOBOOKS</a></li>
+                        <li class="nav-item"><a href="#services" class="nav-link">STATIONIARY & GIFTS</a></li>
+                        <li class="nav-item"><a href="#contact" class="nav-link">BLOG</a></li>
+                    </ul>
+                    <div class="main--nav-icons">
+                        <img class="nav-icon" src="images/user.svg" alt="Account">
+                        <img class="nav-icon" src="images/search.svg" alt="Search">
+                        <img class="nav-icon" src="images/basket.svg" alt="Basket">
+                    </div>
+                </nav>
+            </div>
+        </header>
+        <section class="section--container">
+            <figure class="section--article-fig">
+                <img class="section--article-fig-img" id="banner-img" alt="Books offers banner" src="images/banner1.svg">
+            </figure>
+
+            <div class="arrow-circle-wrap">
+
+                <button class="circle-button-1 button-round" data-index="0">
+                    <img class="circle" id="circle1" src="images/circle_selected.svg">
+                </button>
+                <button class="circle-button-2 button-round" data-index="1">
+                    <img class="circle" id="circle2" src="images/circle_grey.svg">
+                </button>
+                <button class="circle-button-3 button-round" data-index="2">
+                    <img class="circle" id="circle3" src="images/circle_grey.svg">
+                </button>
+
+            </div>
+        </section>
+        <div class="floating-element floating-element-1">
+            <p>CHANGE OLD BOOK TO NEW BOOK <img src="images/arrow_right.svg" alt="arrow"></p>
+        </div>
+        <div class="floating-element floating-element-2">
+            <p>TOP 100 BOOKS 2022<img src="images/arrow_right.svg" alt="arrow"></p>
+        </div>
+        <main class="main-wrap">
+            <div class="content-wrap">
+                <aside>
+                    <div class="aside--books-menu-list">
+                        <ul class="list-of-books-genre">
+                            <li class="books-genre genre-selected" data-genre="Architecture">Architecture</li>
+                            <li class="books-genre not-selected" data-genre="Biography & Autobiography">Biography</li>
+                            <li class="books-genre not-selected" data-genre="Business">Business</li>
+                            <li class="books-genre not-selected" data-genre="Crafts & Hobbies">Crafts & Hobbies</li>
+                            <li class="books-genre not-selected" data-genre="Drama">Drama</li>
+                            <li class="books-genre not-selected" data-genre="Fiction">Fiction</li>
+                            <li class="books-genre not-selected" data-genre="Cooking">Food & Drink</li>
+                            <li class="books-genre not-selected" data-genre="Health & Fitness">Health & Wellbeing</li>
+                            <li class="books-genre not-selected" data-genre="History">History & Politics</li>
+                            <li class="books-genre not-selected" data-genre="Humor">Humor</li>
+                            <li class="books-genre not-selected" data-genre="Poetry">Poetry</li>
+                            <li class="books-genre not-selected" data-genre="Psychology">Psychology</li>
+                            <li class="books-genre not-selected" data-genre="Science">Science</li>
+                            <li class="books-genre not-selected" data-genre="Technology">Technology</li>
+                            <li class="books-genre not-selected" data-genre="Travel">Travel & Maps</li>
+                        </ul>
+                    </div>
+                </aside>
+
+                <div class="books-info-wrap" id="books-container">       
+                </div>
+            </div>    
+
+    </main>
+
+<script src="script.js"></script>
+<script src="books_api.js"></script>
+
+</body>
+
+</html>
