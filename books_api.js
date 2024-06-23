@@ -1,4 +1,4 @@
-const apiKey = 'AIzaSyBvYoV8kb5Go3CrSKBP6F0H6sXa2vv6Wo8';
+const apiKey = 'MY_KEY';
 let startIndex = 0;
 const maxResults = 6;
 let currentGenre = "Architecture";
